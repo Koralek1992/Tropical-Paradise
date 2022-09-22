@@ -14,3 +14,9 @@
     background-attachment: fixed;
 
 }
+
+@mixin islandCardStyle {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
