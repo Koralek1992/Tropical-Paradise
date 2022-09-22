@@ -185,7 +185,7 @@ body {
 	&__img {
 		width: 100%;
 		margin-bottom: 1em;
-        padding: 0 2em;
+		padding: 0 2em;
 	}
 
 	&__title {
@@ -194,6 +194,27 @@ body {
 
 	&__text {
 		font-size: 1.4rem;
+	}
+}
+
+// hero-img
+
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages('../img/hd-small.jpg');
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+
+	&__title {
+		font-family: 'Dancing Script', cursive;
+		margin-bottom: 0.5em;
+		font-size: 4.8rem;
+	}
+
+	&__text {
+		padding: 1em 0;
 	}
 }
 
@@ -209,7 +230,7 @@ body {
 				width: 55%;
 
 				&--right {
-					text-align: right;;
+					text-align: right;
 				}
 			}
 
@@ -253,6 +274,19 @@ body {
 			font-size: 1.8rem;
 		}
 	}
+
+	.hero-img {
+		padding: 30rem 2em;
+
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -274,24 +308,38 @@ body {
 		}
 	}
 
-    .dreams {
-        &__box {
-            margin: 5em 0;
+	.dreams {
+		&__box {
+			margin: 5em 0;
 
-            &-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin-bottom: 2.5em;
-            }
-        }
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 2.5em;
+			}
+		}
 
-        &__title {
-            font-size: 3.6rem;
-        }
+		&__title {
+			font-size: 3.6rem;
+		}
 
-        &__text {
-            font-size: 2.2rem;
-        }
-    }
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
+
+	.hero-img {
+		padding: 40rem 2em;
+		background-image: $blue-gradient, url('../img/hd-big.jpg');
+
+		&__title {
+			font-size: 7.2rem;
+		}
+
+		hr {
+			width: 60%;
+			max-width: 900px;
+		}
+	}
 }
