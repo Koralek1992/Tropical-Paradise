@@ -201,6 +201,12 @@ body {
           animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -377,7 +383,7 @@ body {
 
 .offers {
   position: relative;
-  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/maldives-small.jpg");
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/offer-mini.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -576,32 +582,31 @@ body {
     margin-bottom: 0;
     max-height: 300px;
   }
+  .offers__option {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+  }
+  .offers__option-img--right {
+    order: 1;
+  }
+  .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .offers__option-heading {
+    margin-bottom: 0.5em;
+    font-size: 3.6rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
+  }
 }
-.offers__option {
-  display: flex;
-  margin: 2em 0;
-  width: 100%;
-}
-.offers__option-img {
-  width: 50%;
-  height: auto;
-}
-.offers__option-img--right {
-  order: 1;
-}
-.offers__option-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.offers__option-heading {
-  margin-bottom: 0.5em;
-  font-size: 3.6rem;
-}
-.offers__option-btn {
-  padding: 1em;
-}
-
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
