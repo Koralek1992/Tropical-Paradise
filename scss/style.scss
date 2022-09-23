@@ -332,7 +332,7 @@ body {
 
 .offers {
 	position: relative;
-	@include heroImages('../img/offer-mini.jpg');
+	@include heroImages('../img/maldives-small.jpg');
 	overflow: hidden;
 
 	.section-heading {
@@ -356,6 +356,8 @@ body {
 
 		&-info {
 			padding: 2em;
+			background-color: $pure-white;
+			z-index: 10;
 		}
 
 		&-heading {

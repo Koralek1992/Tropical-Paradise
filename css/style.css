@@ -377,7 +377,7 @@ body {
 
 .offers {
   position: relative;
-  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/offer-mini.jpg");
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/maldives-small.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -401,6 +401,8 @@ body {
 }
 .offers__option-info {
   padding: 2em;
+  background-color: #fff;
+  z-index: 10;
 }
 .offers__option-heading {
   margin-bottom: 0.5em;
