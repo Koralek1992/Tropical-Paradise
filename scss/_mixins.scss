@@ -9,14 +9,21 @@
 
 @mixin heroImages($bgImg) {
 	background-image: $blue-gradient, url($bgImg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 @mixin islandCardStyle {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+@mixin contactForm {
+	padding: 0.6em 1.2em;
+	margin-bottom: 2em;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.6rem;
 }
